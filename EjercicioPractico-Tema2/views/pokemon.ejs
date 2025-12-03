@@ -14,18 +14,25 @@
         <%- include("partials/header", {tipos : tipos}) %>
 
         <main>
-            <section id="cartas-section">
-                <h2>Pokemons registrados</h2>
+            
+            <article class="carta">
 
-                <div class="container">
-                    <% pokemons.forEach(pokemon => { %>
-                        <a href="/pokemon/<%= pokemon.id %>">
-                            <%- include("partials/carta", {pokemon : pokemon}) %>
-                        </a>
-                    <% }); %>
-                </div>
+                <header>
+                    <h1><%= pokemon.nombre %></h1>
+                    <p><%= pokemon.numero %></p>
+                    <p><a href="/pokemon/<%= pokemon.tipo %>"><%= pokemon.tipo %></a></p>
+                </header>
 
-            </section>
+                <figure>
+                    <img src="<%= pokemon.imagen %>" alt="<%= pokemon.nombre %>">
+                </figure>
+                
+                <section class="content">
+                    <%- pokemon.descripcion %>
+                </section>
+
+            </article>
+
         </main>
 
         <%- include("partials/footer") %>

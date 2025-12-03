@@ -1,0 +1,121 @@
+@import 'normalize.css';
+
+
+/*estilo main*/
+
+
+/*estilo cabecera*/
+
+header {
+
+    width: 100%;
+    height: 12rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:0;
+    box-sizing: border-box;
+
+    .image-header {
+        width: 100%;
+        padding: 2rem 1rem;
+        color: azure;
+        background-image: url('https://images.pexels.com/photos/7708409/pexels-photo-7708409.jpeg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        h1 {
+            margin:0;
+            font-size: 3rem;
+            text-align: center;
+        }
+
+        p{
+            margin:0;
+            font-size: 2rem;
+            text-align: center;
+        }
+    }
+
+    #navBar {
+        width: 100%;
+        background-color: blue;
+
+        ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            list-style: none;
+            gap: 1rem;
+            padding: 0;
+
+            li a{
+                text-decoration: none;
+                color: white;
+                padding: 1rem;
+            }
+        }
+    }
+}
+
+/*Estilos footer*/
+footer {
+    width: 100%;
+    color: white;
+    background-color: black;
+    text-align: center;
+}
+
+/*Estilos pagina principal del index*/
+#cartas-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:3rem;
+
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 3rem;
+        justify-content: center; 
+        height: auto;
+        
+        figure {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            border: solid 1px;
+
+            img {
+                width: 300px;
+                height: 300px;
+            }
+        }
+    
+    }
+}
+
+/*Estilos vista de pokemons por tipos*/
+article.carta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    img {
+        width: 800px;
+        height: 400px;
+    }
+}
